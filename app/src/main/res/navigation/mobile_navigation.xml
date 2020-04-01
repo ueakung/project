@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.test3.ui.home.HomeFragment"
+        android:label="@string/title_Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/GoBus1"
+            app:destination="@id/bus1" />
+        <action
+            android:id="@+id/GoBus2"
+            app:destination="@id/bus2" />
+        <action
+            android:id="@+id/GoBus3"
+            app:destination="@id/bus3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.test3.ui.dashboard.DashboardFragment"
+        android:label="@string/title_Booking"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.test3.ui.notifications.NotificationsFragment"
+        android:label="@string/title_Profile"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/bus1"
+        android:name="com.example.test3.bus1"
+        android:label="fragment_bus1"
+        tools:layout="@layout/fragment_bus1" />
+    <fragment
+        android:id="@+id/bus2"
+        android:name="com.example.test3.bus2"
+        android:label="fragment_bus2"
+        tools:layout="@layout/fragment_bus2" />
+    <fragment
+        android:id="@+id/bus3"
+        android:name="com.example.test3.bus3"
+        android:label="fragment_bus3"
+        tools:layout="@layout/fragment_bus3" />
+</navigation>
